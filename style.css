@@ -1,3 +1,16 @@
-function hello() {
-    alert("こんにちは！");
+body {
+    text-align: center;
+    font-family: sans-serif;
+    background-color: #F0F8FF;
+    padding-top: 100px;
+}
+
+h1 {
+    color: #333333;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
 }
