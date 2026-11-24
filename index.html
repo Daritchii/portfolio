@@ -1,88 +1,24 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="The personal portfolio of Kawamoto Daritchii.">
-  <title>Kawamoto Daritchii — Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>HOPSCOTCH — Frogger 3D</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="navbar">
-    <a class="logo" href="#home">KD.</a>
-
-    <button class="menu-toggle" aria-label="Toggle navigation"
-      aria-expanded="false">
-      Menu
-    </button>
-
-    <nav class="nav-links">
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#work">Work</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
-
-  <main>
-    <section class="hero" id="home">
-      <p class="eyebrow">PERSONAL PORTFOLIO</p>
-
-      <h1>Hi, I'm <span>Kawamoto Daritchii.</span></h1>
-
-      <p class="intro">
-        I’m building my path, exploring new ideas, and turning
-        creativity into meaningful work.
-      </p>
-
-      <a class="button" href="#work">Explore my work <span>↗</span></a>
-
-      <p class="availability">A little about me, my ideas, and what I create.</p>
-    </section>
-
-    <section class="content-section" id="about">
-      <p class="eyebrow">01 / ABOUT</p>
-      <h2>A little about me.</h2>
-      <p>
-        Welcome to my corner of the internet. This is where I'll share
-        my story, interests, skills, and the things I'm learning.
-      </p>
-    </section>
-
-    <section class="content-section" id="work">
-      <p class="eyebrow">02 / SELECTED WORK</p>
-      <h2>Things I'm working on.</h2>
-
-      <div class="project-grid">
-        <article class="project-card">
-          <span>PROJECT 01</span>
-          <h3>First project</h3>
-          <p>My first project description will go here.</p>
-        </article>
-
-        <article class="project-card">
-          <span>PROJECT 02</span>
-          <h3>Something new</h3>
-          <p>A space for another project or creative experiment.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="content-section contact" id="contact">
-      <p class="eyebrow">03 / CONTACT</p>
-      <h2>Let's connect.</h2>
-      <p>Have a question or want to work together? Get in touch.</p>
-      <a class="text-link" href="mailto:hello@example.com">
-        Send me an email ↗
-      </a>
-    </section>
-  </main>
-
-  <footer>
-    <p>© <span id="year"></span> Kawamoto Daritchii</p>
-    <p>Made with curiosity.</p>
-  </footer>
+<div class="shell">
+<header class="top"><div class="brand"><div class="frogmark">🐸</div> HOPSCOTCH <span class="kicker">/ ARCADE LAB</span></div><div class="topright"><span>BUILT FOR THE BRAVE</span><span>✳ &nbsp; 3D EDITION</span></div></header>
+<main>
+<section class="intro"><div><div class="kicker">A LITTLE HOP. A BIG ADVENTURE.</div><h1>Cross if you dare.</h1></div><p>Navigate the traffic, ride the current, and make it home. Five safe spots. One very determined frog.</p></section>
+<div class="gameframe">
+<canvas id="game" width="960" height="540" aria-label="3D Frogger game"></canvas>
+<div class="hud"><div class="pill"><small>SCORE</small><strong id="score">0000</strong></div><div class="pill"><small>BEST</small><strong id="best">0000</strong></div><div class="pill"><small>FROG LIVES</small><strong class="lives" id="lives">● ● ●</strong></div></div>
+<div class="overlay" id="overlay"><div class="panel"><div class="eyebrow" id="eyebrow">WELCOME TO HOPSCOTCH</div><h2 id="headline">Ready, hopper?</h2><p id="message">Five lanes to freedom. Dodge the traffic, catch a log, and reach the glowing garden at the top.</p><button class="btn" id="start">START HOPPING&nbsp; ↗</button></div></div>
+</div>
+<div class="controls"><div class="keys"><span>MOVE</span><span class="key">↑</span><span class="key">↓</span><span class="key">←</span><span class="key">→</span><span style="margin-left:6px">or WASD</span><span style="margin-left:13px">PAUSE</span><span class="key">P</span></div><div class="touch"><button data-dir="left">←</button><button data-dir="up">↑</button><button data-dir="down">↓</button><button data-dir="right">→</button></div><div class="kicker">TIP: LOGS ARE YOUR FRIENDS</div></div>
+<footer class="footer"><span>HOPSCOTCH © 2025 — PORTFOLIO BUILD</span><span>NO FROGS WERE RUSHED IN THE MAKING</span></footer>
+</main></div>
+  <script src="game.js"></script>
 </body>
 </html>
